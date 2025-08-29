@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/lemons/static/js/main.52004ae6.js",
-    "index.html": "/lemons/index.html",
-    "main.52004ae6.js.map": "/lemons/static/js/main.52004ae6.js.map"
+    "main.js": "/lemons/build/static/js/main.52004ae6.js",
+    "index.html": "/lemons/build/index.html",
+    "main.52004ae6.js.map": "/lemons/build/static/js/main.52004ae6.js.map"
   },
   "entrypoints": [
     "static/js/main.52004ae6.js"

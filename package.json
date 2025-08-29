@@ -1,6 +1,6 @@
 {
   "name": "Lemons",
-  "homepage": "https://s6H4.github.io/lemons",
+  "homepage": "https://s6H4.github.io/lemons/build",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
