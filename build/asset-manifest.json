@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/lemons/build/static/js/main.52004ae6.js",
+    "main.js": "/lemons/build/static/js/main.6c255189.js",
     "index.html": "/lemons/build/index.html",
-    "main.52004ae6.js.map": "/lemons/build/static/js/main.52004ae6.js.map"
+    "main.6c255189.js.map": "/lemons/build/static/js/main.6c255189.js.map"
   },
   "entrypoints": [
-    "static/js/main.52004ae6.js"
+    "static/js/main.6c255189.js"
   ]
 }
