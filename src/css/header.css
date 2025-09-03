@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.header {
+ header {
   background: #2c3e50;
   color: white;
   padding: 1rem;
@@ -11,12 +11,12 @@
   align-items: flex-start;
 }
 
-.nav {
+nav {
   display: flex;
   gap: 1rem;
 }
 
-.nav a {
+nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
