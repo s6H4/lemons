@@ -2,22 +2,3 @@
   text-align: center;
 }
 
- header {
-  background: #2c3e50;
-  color: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-beetwen;
-  align-items: flex-start;
-}
-
-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-}
