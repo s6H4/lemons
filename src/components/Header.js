@@ -4,11 +4,16 @@ import './../css/header.css';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header class="header">
+      <a href="#" class="logo">Lemon.Fresh</a>
       <nav>
-        <Link to="/">Главная</Link>
-        <Link to="/about">О нас</Link>
-        <Link to="/info">Информация</Link>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Catalog</a>
+        <a href="#">Services</a>
+        <a href="#">text5</a>
+        <div class="animation home">
+        </div>
       </nav>
     </header>
   );
