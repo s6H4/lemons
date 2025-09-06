@@ -3,7 +3,7 @@ import React from 'react';
 const Main = () => {
   return (
     <main>
-      <h2>Лимоны!</h2>
+      <h1>Лимоны - это круто!</h1>
     </main>
   );
 };

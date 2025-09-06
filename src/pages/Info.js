@@ -3,8 +3,7 @@ import React from 'react';
 const Info = () => {
   return (
     <main>
-      <h2>Контакты</h2>
-      <p>Email: lemons@example.com</p>
+      <h3>Каталог</h3>
     </main>
   );
 };
