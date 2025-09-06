@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lemons/build/static/css/main.23173d8f.css",
-    "main.js": "/lemons/build/static/js/main.667d8553.js",
+    "main.css": "/lemons/build/static/css/main.b9ccce02.css",
+    "main.js": "/lemons/build/static/js/main.008f5f95.js",
     "index.html": "/lemons/build/index.html",
-    "main.23173d8f.css.map": "/lemons/build/static/css/main.23173d8f.css.map",
-    "main.667d8553.js.map": "/lemons/build/static/js/main.667d8553.js.map"
+    "main.b9ccce02.css.map": "/lemons/build/static/css/main.b9ccce02.css.map",
+    "main.008f5f95.js.map": "/lemons/build/static/js/main.008f5f95.js.map"
   },
   "entrypoints": [
-    "static/css/main.23173d8f.css",
-    "static/js/main.667d8553.js"
+    "static/css/main.b9ccce02.css",
+    "static/js/main.008f5f95.js"
   ]
 }
