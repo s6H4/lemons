@@ -1,111 +1,91 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 0;
-  outline: 0;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-family: 'Poppins', sans-serif;
-  transition: all .3s;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-body {
-  background: #FDFDFD;
-}
-
-.header {
-  width: 100%;
-  position: fixed;
+header {
   top: 0;
   left: 0;
-  padding: 20px 8%;
+  margin: 10px;
   display: flex;
+  height: 50px;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .logo {
-  font-size: 30px;
-  color: #333333;
-}
-
-.header nav {
-  background-color: #FFD700;
-  position: relative;
-  width: 515px;
+header .logo {
   height: 50px;
-  border-radius: 8px;
-  font-size: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.header nav a {
+header .logo::before {
+  content: '';
   display: inline-block;
-  font-size: 15px;
-  color: #fff;
-  position: relative;
-  line-height: 50px;
-  z-index: 1;
-  text-align: center;
-  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #FFD700; /* временный цвет для лого */
+  border-radius: 8px;
 }
 
-.header nav .animation {
+header nav {
+  position: relative;
+  background-color: #302e2e;
+  border-radius: 10px;
+  display: flex;
+  height: 50px;
+}
+
+header nav a {
+  position: relative;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 50px;
+  z-index: 2;
+  text-align: center;
+  padding: 0 15px;
+  min-width: 100px;
+}
+
+header nav .animation {
   position: absolute;
   height: 100%;
   top: 0;
-  z-index: 0;
-  border-radius: 8px;
-  transition: all .5s ease;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all .3s ease;
+  background-color: #808080;
 }
 
-a:nth-child(1) {
-  width: 100px;
-}
-a:nth-child(2) {
-  width: 100px;
-}
-a:nth-child(3) {
-  width: 100px;
-}
-a:nth-child(4) {
-  width: 100px;
-}
-a:nth-child(5) {
-  width: 115px;
-}
-
-nav .home, a:nth-child(1):hover ~ .animation {
+/* Анимация для hover */
+header nav a:nth-child(1):hover ~ .animation {
   width: 100px;
   left: 0;
-  background-color: #808080;
 }
 
-a:nth-child(2):hover ~ .animation {
+header nav a:nth-child(2):hover ~ .animation {
   width: 100px;
   left: 100px;
-  background-color: #808080;
 }
 
-a:nth-child(3):hover ~ .animation {
+header nav a:nth-child(3):hover ~ .animation {
   width: 100px;
   left: 200px;
-  background-color: #808080;
 }
 
-a:nth-child(4):hover ~ .animation {
+header nav a.active:nth-child(1) ~ .animation {
   width: 100px;
-  left: 300px;
-  background-color: #808080;
+  left: 0;
 }
 
-a:nth-child(5):hover ~ .animation {
+header nav a.active:nth-child(2) ~ .animation {
   width: 100px;
-  left: 415px;
-  background-color: #808080;
+  left: 100px;
+}
+
+header nav a.active:nth-child(3) ~ .animation {
+  width: 100px;
+  left: 200px;
 }

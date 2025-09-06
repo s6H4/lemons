@@ -1,19 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './../css/header.css';
 
 const Header = () => {
+  const [activeLink, setActiveLink] = useState('/');
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
-    <header class="header">
-      <a href="#" class="logo">Lemon.Fresh</a>
+    <header className="header">
+      <a href="#" className="logo">Lemon.Fresh</a>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Catalog</a>
-        <a href="#">Services</a>
-        <a href="#">text5</a>
-        <div class="animation home">
-        </div>
+        <Link 
+          to="/" 
+          className={activeLink === '/' ? 'active' : ''}
+          onClick={() => setActiveLink('/')}
+        >
+          Главная
+        </Link>
+        <Link 
+          to="/about" 
+          className={activeLink === '/about' ? 'active' : ''}
+          onClick={() => setActiveLink('/about')}
+        >
+          О нас
+        </Link>
+        <Link 
+          to="/info" 
+          className={activeLink === '/info' ? 'active' : ''}
+          onClick={() => setActiveLink('/info')}
+        >
+          Каталог
+        </Link>
+        <div className="animation"></div>
       </nav>
     </header>
   );
